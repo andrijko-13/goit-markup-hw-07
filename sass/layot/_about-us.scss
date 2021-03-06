@@ -1,0 +1,38 @@
+.about-us {
+  padding-bottom: 94px;
+}
+
+.about-us-title {
+  @include title();
+}
+
+.about-us-list {
+  display: flex;
+}
+
+.about-us-item {
+  width: 370px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.about-us-thumb {
+  position: relative;
+}
+
+.about-us-overlay {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+
+  @include paddings-t-b(27px);
+
+  background-color: rgba(47, 48, 58, 0.8);
+
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: $button-text-color;
+}

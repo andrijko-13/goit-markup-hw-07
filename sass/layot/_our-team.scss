@@ -1,0 +1,29 @@
+.team-title {
+  @include title();
+}
+
+.team {
+  @include paddings-t-b(94px);
+  background-color: $button-backgroung-color;
+}
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-name {
+  margin-bottom: 10px;
+
+  font-size: 16px;
+  line-height: 1.188;
+  text-align: center;
+  color: $title-color;
+}
+
+.team-position {
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.188;
+  text-align: center;
+}

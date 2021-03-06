@@ -1,0 +1,160 @@
+input,
+textarea {
+  display: block;
+  padding: 0px;
+}
+
+.follow-action {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: $title-color;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1, 167;
+  letter-spacing: 0.01em;
+
+  color: $text-color;
+}
+
+.modal-input {
+  padding-left: 42px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  width: 100%;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.15;
+
+  transition-property: border-color;
+  transition-duration: $transition-duration;
+  transition-timing-function: $timing-function;
+  &:focus {
+    cursor: pointer;
+    outline: none;
+    border-color: $focus-color;
+  }
+}
+
+.modal-form-input-wrapper {
+  position: relative;
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+.modal-form-input-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  display: block;
+  transform: translateY(-50%);
+
+  transition-property: fill;
+  transition-duration: $transition-duration;
+  transition-timing-function: $timing-function;
+
+  .modal-input:focus + & {
+    fill: $focus-color;
+  }
+}
+
+.modal-textarea {
+  margin-top: 4px;
+  padding: 12px 16px;
+  height: 120px;
+  resize: none;
+  width: 100%;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.15;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition-property: border-color;
+  transition-duration: $transition-duration;
+  transition-timing-function: $timing-function;
+  &::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1, 167;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+
+  &:focus {
+    cursor: pointer;
+    outline: none;
+    border-color: $focus-color;
+  }
+}
+
+label > a {
+  text-decoration: underline;
+}
+
+.modal-btn {
+  align-self: center;
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 55px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+
+  letter-spacing: 0.06em;
+  color: $button-text-color;
+  background-color: $focus-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  outline: none;
+
+  transition-property: background-color;
+  transition-duration: $transition-duration;
+  transition-timing-function: $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $order-button-color;
+  }
+}
+
+.cheakbox-wrapper {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.user-policy-link {
+  color: $focus-color;
+}
+
+.label-user-policy::before {
+  content: '';
+  margin-right: 12px;
+  width: 16px;
+  height: 15px;
+  display: inline-block;
+  background-image: url(../image/icons/Vector.svg);
+
+  .modal-user-policy:checked + & {
+    background-image: url(../image/icons/icon-check.svg);
+  }
+
+  .modal-user-policy:focus + & {
+    outline: 2px solid $logo-second-part;
+  }
+}

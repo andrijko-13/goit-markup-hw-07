@@ -1,0 +1,62 @@
+.hero {
+  text-align: center;
+  @include paddings-t-b(200px);
+
+  background: $dark-background-color;
+}
+
+.overlay {
+  background-color: #c4c4c4;
+  max-width: 1600px;
+  height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../image/hero-min.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-title {
+  width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.main-title {
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.364;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $button-text-color;
+}
+
+.order-button {
+  @include paddings-t-b(10px);
+  @include paddings-r-l(32px);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  display: inline-block;
+  letter-spacing: 0.06em;
+  color: $button-text-color;
+  background-color: $focus-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  transition-property: background-color;
+  transition-duration: $transition-duration;
+  transition-timing-function: $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $order-button-color;
+  }
+}

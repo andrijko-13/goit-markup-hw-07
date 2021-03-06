@@ -1,0 +1,23 @@
+//UTILS//
+@import './utils/variables';
+@import './utils/vissualy-hidden';
+@import './utils/mixins';
+//base//
+@import './base/commons';
+@import './base/container';
+
+//components//
+@import './components/modal-btn';
+@import './components/social-links';
+
+//layot//
+@import './layot/forms';
+@import './layot/header';
+@import './layot/footer';
+@import './layot/hero';
+@import './layot/features';
+@import './layot/about-us';
+@import './layot/our-team';
+@import './layot/clients';
+@import './layot/portfolio-nav';
+@import './layot/portfolio-galery';

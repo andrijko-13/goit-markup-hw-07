@@ -1,0 +1,105 @@
+.footer {
+  @include paddings-t-b(60px);
+  background: $dark-background-color;
+}
+
+.address-map {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.714;
+  color: $button-text-color;
+}
+.contacts-footer {
+  font-weight: 400;
+  line-height: 1.714;
+  color: $button-alfa-text;
+  & .contacts-item {
+    margin-left: 0;
+    margin-right: auto;
+  }
+  & .contacts-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  & .mail-link,
+  & .tel-link {
+    padding: 0 0;
+  }
+}
+
+.address {
+  margin-bottom: 10px;
+  margin-right: auto;
+}
+
+.follow {
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $button-text-color;
+}
+
+.flex-footer {
+  display: flex;
+  align-items: baseline;
+}
+.contact-flex-footer {
+  margin-right: 70px;
+  width: 230px;
+}
+
+.follow-footer {
+  width: 206px;
+  margin-right: 94px;
+}
+
+.follow-form-wrapper {
+  display: flex;
+  margin-top: 20px;
+}
+.follow-mail {
+  margin-right: 11px;
+  padding-left: 16px;
+  width: 360px;
+  height: 50px;
+  color: $button-text-color;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: $dark-background-color;
+
+  &:focus {
+    outline: none;
+  }
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.follow-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 200px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: $button-text-color;
+  background-color: $focus-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  transition-property: background-color;
+  transition-duration: $transition-duration;
+  transition-timing-function: $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $order-button-color;
+  }
+}
